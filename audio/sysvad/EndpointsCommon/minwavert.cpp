@@ -569,7 +569,7 @@ Return Value:
             m_pMixFormat->WaveFormatExt.Format.nSamplesPerSec = 48000;
             m_pMixFormat->WaveFormatExt.Format.nBlockAlign = 4;
             m_pMixFormat->WaveFormatExt.Format.nAvgBytesPerSec = 192000;
-            m_pMixFormat->WaveFormatExt.Format.wBitsPerSample = 16;
+            m_pMixFormat->WaveFormatExt.Format.wBitsPerSample = 24;
             m_pMixFormat->WaveFormatExt.Format.cbSize = sizeof(WAVEFORMATEXTENSIBLE) - sizeof(WAVEFORMATEX);
             m_pMixFormat->WaveFormatExt.SubFormat = KSDATAFORMAT_SUBTYPE_PCM;
             m_pMixFormat->WaveFormatExt.Samples.wValidBitsPerSample = 16;
