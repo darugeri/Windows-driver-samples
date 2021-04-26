@@ -510,9 +510,9 @@ static
 PENDPOINT_MINIPAIR  g_RenderEndpoints[] = 
 {
     &SpeakerMiniports,
-    &SpeakerHpMiniports,
-    &HdmiMiniports,
-    &SpdifMiniports,
+    //&SpeakerHpMiniports,
+    //&HdmiMiniports,
+    //&SpdifMiniports,
 };
 
 #define g_cRenderEndpoints  (SIZEOF_ARRAY(g_RenderEndpoints))

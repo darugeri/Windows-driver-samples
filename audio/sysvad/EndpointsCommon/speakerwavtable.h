@@ -52,7 +52,7 @@ Abstract:
 static 
 KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerAudioEngineSupportedDeviceFormats[] =
 {
-    { // 48Khz, 24 bit, 2 channels
+    { // 48Khz, 24 bit, 4 channels
         {
             sizeof(KSDATAFORMAT_WAVEFORMATEXTENSIBLE),
             0,
@@ -65,16 +65,16 @@ KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerAudioEngineSupportedDeviceFormats[] =
         {
             {
                 WAVE_FORMAT_EXTENSIBLE,
-                2,
+                4,
                 48000,
-                288000,
-                6,
+                576000,
+                12,
                 24,
                 sizeof(WAVEFORMATEXTENSIBLE)-sizeof(WAVEFORMATEX)
             },
-    16,
-    KSAUDIO_SPEAKER_STEREO,
-    STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
+            16,
+            KSAUDIO_SPEAKER_STEREO,
+            STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
         }
     }
 };
@@ -102,9 +102,9 @@ KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerHostPinSupportedDeviceFormats[] =
                 24,
                 sizeof(WAVEFORMATEXTENSIBLE)-sizeof(WAVEFORMATEX)
             },
-    16,
-    KSAUDIO_SPEAKER_STEREO,
-    STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
+            16,
+            KSAUDIO_SPEAKER_STEREO,
+            STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
         }
     },
     { // 48Khz, 16 bit, 2 channels
@@ -127,9 +127,9 @@ KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerHostPinSupportedDeviceFormats[] =
                 16,
                 sizeof(WAVEFORMATEXTENSIBLE) - sizeof(WAVEFORMATEX)
             },
-    16,
-    KSAUDIO_SPEAKER_STEREO,
-    STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
+            16,
+            KSAUDIO_SPEAKER_STEREO,
+            STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
         }
     }
 };
@@ -157,9 +157,9 @@ KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerOffloadPinSupportedDeviceFormats[] =
                 16,
                 sizeof(WAVEFORMATEXTENSIBLE) - sizeof(WAVEFORMATEX)
             },
-    16,
-    KSAUDIO_SPEAKER_STEREO,
-    STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
+            16,
+            KSAUDIO_SPEAKER_STEREO,
+            STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
         }
     },
     { // 44.1 Khz, 16 bit, 2 channels
@@ -182,9 +182,9 @@ KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerOffloadPinSupportedDeviceFormats[] =
                 16,
                 sizeof(WAVEFORMATEXTENSIBLE) - sizeof(WAVEFORMATEX)
             },
-    16,
-    KSAUDIO_SPEAKER_STEREO,
-    STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
+            16,
+            KSAUDIO_SPEAKER_STEREO,
+            STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
         }
     },
     { // 22.05 Khz, 16 bit , 2 channels
@@ -207,9 +207,9 @@ KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerOffloadPinSupportedDeviceFormats[] =
                 16,
                 sizeof(WAVEFORMATEXTENSIBLE) - sizeof(WAVEFORMATEX)
             },
-    16,
-    KSAUDIO_SPEAKER_STEREO,
-    STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
+            16,
+            KSAUDIO_SPEAKER_STEREO,
+            STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
         }
     },
     { // 48 Khz, 16 bit, 6 channels
@@ -232,9 +232,9 @@ KSDATAFORMAT_WAVEFORMATEXTENSIBLE SpeakerOffloadPinSupportedDeviceFormats[] =
                 16,
                 sizeof(WAVEFORMATEXTENSIBLE) - sizeof(WAVEFORMATEX)
             },
-    16,
-    KSAUDIO_SPEAKER_STEREO,
-    STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
+            16,
+            KSAUDIO_SPEAKER_STEREO,
+            STATICGUIDOF(KSDATAFORMAT_SUBTYPE_PCM)
         }
     }
 };
